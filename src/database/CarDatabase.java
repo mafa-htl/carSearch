@@ -1,9 +1,11 @@
 /**class CarDatabase
  * @author Matteo Falkenberg
- * @version 1.5, 14.01.2021
+ * @version 1.6, 14.01.2021
  */
 
-package model;
+package database;
+
+import model.Vehicle;
 
 import java.util.HashMap;
 import java.util.LinkedList;

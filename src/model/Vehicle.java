@@ -1,6 +1,6 @@
 /**class Vehicle
  * @author Matteo Falkenberg
- * @version 1.5, 14.01.2021
+ * @version 1.6, 14.01.2021
  */
 
 package model;
@@ -70,7 +70,7 @@ public class Vehicle {
         sb.append("Model: " + this.getModel() + "\n");
         sb.append("Color: " + this.getColor() + "\n");
         sb.append("License Plate: " + this.getLicensePlate() + "\n");
-        sb.append("Owner: " + this.getOwner() + "\n\n");
+        sb.append("Owner: " + this.getOwner());
 
         return sb.toString();
     }
