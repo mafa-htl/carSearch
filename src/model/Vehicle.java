@@ -1,6 +1,6 @@
 /**class Vehicle
  * @author Matteo Falkenberg
- * @version 1.1, 07.01.2021
+ * @version 1.2, 14.01.2021
  */
 
 package model;
@@ -13,12 +13,8 @@ public class Vehicle {
     private String model;
     private String licensePlate;
 
-    Vehicle(String color, String owner, String manufacturer, String model, String licensePlate){
-        this.color = color;
-        this.owner = owner;
-        this.manufacturer = manufacturer;
-        this.model = model;
-        this.licensePlate = licensePlate;
+    Vehicle(){
+
     }
 
 
