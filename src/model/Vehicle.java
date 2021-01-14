@@ -1,6 +1,6 @@
 /**class Vehicle
  * @author Matteo Falkenberg
- * @version 1.4, 14.01.2021
+ * @version 1.5, 14.01.2021
  */
 
 package model;
