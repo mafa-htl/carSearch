@@ -1,11 +1,12 @@
 /**class CarDatabase
  * @author Matteo Falkenberg
- * @version 1.3, 14.01.2021
+ * @version 1.4, 14.01.2021
  */
 
 package model;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 
 public class CarDatabase {
 
@@ -31,19 +32,24 @@ public class CarDatabase {
     }
 
 
-    public Vehicle search(String licensePlate, boolean exact){
+    public LinkedList<Vehicle> search(String licensePlate, boolean exact){
+
+        LinkedList<Vehicle> vehicles = new LinkedList();
 
         if(exact){
-            return db.get(licensePlate);
-        }
-        else{
-            for(Vehicle v : db.values()){
-                if(v.getLicensePlate().contains(licensePlate.toUpperCase()))
-                    return v;
-            }
+            vehicles.add(db.get(licensePlate));
+            return vehicles;
         }
 
-        return null;
+        else{
+            for(Vehicle v : db.values()){
+
+                if(v.getLicensePlate().contains(licensePlate.toUpperCase())){
+                    vehicles.add(v);
+                }
+            }
+            return vehicles;
+        }
     }
 
 }

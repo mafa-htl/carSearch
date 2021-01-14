@@ -1,5 +1,5 @@
 /**class MagicGenerator
- * @version 1.3, 14.01.2021
+ * @version 1.4, 14.01.2021
  */
 
 package model;

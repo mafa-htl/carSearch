@@ -1,6 +1,6 @@
 /**class Vehicle
  * @author Matteo Falkenberg
- * @version 1.3, 14.01.2021
+ * @version 1.4, 14.01.2021
  */
 
 package model;
@@ -66,11 +66,11 @@ public class Vehicle {
     public String toString(){
         StringBuilder sb = new StringBuilder();
 
-        sb.append("Manufacturer: " + this.getManufacturer());
-        sb.append("Model: " + this.getModel());
-        sb.append("Color: " + this.getColor());
-        sb.append("License Plate: " + this.getLicensePlate());
-        sb.append("Owner: " + this.getOwner());
+        sb.append("Manufacturer: " + this.getManufacturer() + "\n");
+        sb.append("Model: " + this.getModel() + "\n");
+        sb.append("Color: " + this.getColor() + "\n");
+        sb.append("License Plate: " + this.getLicensePlate() + "\n");
+        sb.append("Owner: " + this.getOwner() + "\n\n");
 
         return sb.toString();
     }

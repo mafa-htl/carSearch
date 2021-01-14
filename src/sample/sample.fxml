@@ -16,8 +16,8 @@
             <TextField fx:id="searchField" promptText="insert license plate ..." />
             <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
                <children>
-                  <Button fx:id="searchBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Search" />
-                  <Button fx:id="searchExBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Search Exact" />
+                  <Button onMouseClicked="#searchFor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Search" />
+                  <Button onMouseClicked="#searchExact" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Search Exact" />
                </children>
             </HBox>
             <ListView fx:id="displayField" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="305.0" />
